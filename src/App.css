@@ -1,0 +1,700 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+    margin: 0 auto;
+    text-align: center;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+input:focus-visible {
+    outline: #dbdbdb solid 1px;
+    box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, .06);
+}
+
+
+/* nav bar */
+
+.borderColor {
+    box-shadow: 0px 0px 0px 2px #868FA029;
+}
+
+.sidenavtextcolor {
+    color: #868FA0;
+}
+
+.sidenavbarcolor {
+    box-shadow: 0px 0px 0px 1px #868FA029;
+    background: #F7F9FC;
+    /* height: 100vh; */
+    min-height: 100vh;
+    height: 100%;
+}
+
+.sidenavbarcolor ul li a {
+    color: #868FA0;
+}
+
+.sidenavbarcolor ul li a:hover {
+    background: #FFFFFF;
+    color: #133FA0;
+}
+
+.sidenavbarcolor ul li a.active {
+    background: #FFFFFF;
+    color: #133FA0;
+}
+
+.sidenavbarcolor ul li .imagehover:hover {
+    /* background: #133FA0 ; */
+    color: #133FA0;
+}
+
+.sidenavwidth {
+    width: 4%;
+}
+
+.topnavbarwidth {
+    width: 75%;
+}
+
+.topnavbgcolor {
+    background: #F7F9FC;
+    box-shadow: 0px 0px 0px 1px #868FA029;
+}
+
+
+/* loginPage */
+
+.loginWrap {
+    width: 100%;
+    background-image: url("../src/assets/backgroundimage.png");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+}
+
+.loginWrapNew {
+    height: 100%;
+}
+
+.loginWrapIn {
+    background-position: left;
+    height: 1000px;
+}
+
+.loginImage {
+    /* width: 50%;
+    height: 100vh;
+    background: url("../src/assets/loginbgimage.jpg"); */
+}
+
+.loginbg {
+    height: 100vh;
+    width: 100%;
+}
+
+.forgetpasswordmsgimg {
+    background: url(./assets/backgroundimage.png) no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+.forgetpasswordmsgdiv {
+    background: #FFFFFF;
+    width: 50%;
+    height: 700px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: block;
+    margin: auto;
+}
+
+.forgetpasstext {
+    color: #868FA0;
+}
+
+.iconposition {
+    top: -25px
+}
+
+.resetpasstext {
+    position: absolute;
+    right: 0;
+}
+
+.searchInputTwo {
+    width: 20%;
+    margin-right: 7px;
+}
+
+.searchInputTwo:last-child {
+    margin-right: 0;
+}
+
+.loginform {
+    /* width: 50%;
+    padding-bottom: 80px;
+
+    box-shadow: 0px 4px 39px 0px #00000038; */
+    background: #F7F9FC;
+    height: 100vh;
+    padding: 108px 219px 50px 212px;
+}
+
+@media screen and (max-width: 1366px) {
+    .loginform {
+        padding: 70px 177px 50px;
+    }
+
+    .loginform.passwordForm {
+        padding: 30px 177px 50px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .loginform {
+        padding: 70px 134px 50px;
+    }
+}
+
+.loginformNew {
+    height: auto;
+}
+
+.logoWrap img {
+    width: 270px;
+    margin: 0 auto;
+}
+
+.formLable {
+    color: #464F60;
+}
+
+.formInput {
+    box-shadow: 0px 0px 0px 1px #868FA066;
+}
+
+.formLoginButton {
+    background: #133FA0 !important;
+    color: #FFFFFF;
+}
+
+.firmwareUpdate {
+    background: #133FA0 !important;
+    color: #FFFFFF;
+    font-size: 10px;
+    padding: 2px 10px;
+
+}
+
+.firmwareUpgrade {
+    background: #15A75B !important;
+    color: #FFFFFF;
+    font-size: 10px;
+    padding: 1px 5px;
+}
+
+.formLoginButtondelete {
+    background: #7d9de2 !important;
+    color: #FFFFFF;
+    cursor: none;
+}
+
+.productIconOption {
+    color: #868FA0;
+
+}
+
+.formLoginButton:hover {
+    background: #002a87 !important;
+    border-color: #002a87 !important;
+}
+
+.firmwareUpgradeButton:hover {
+    background: #15A75B !important;
+    border-color: #15A75B !important;
+}
+
+.firmwareUpgradeButton {
+    background: #15A75B !important;
+    color: #FFFFFF;
+}
+
+.firmwareupdate {
+    background: #133FA0;
+}
+
+
+.formLoginButton:focus {
+    outline: none !important;
+}
+
+.formLoginButtonUser {
+    background: #D1293D !important;
+    color: #FFFFFF;
+}
+
+.formLoginButtonUser:hover {
+    background: #b3192b !important;
+    border-color: #b3192b !important;
+}
+
+.formLoginButtonEditUser {
+    background: #133FA0 !important;
+    color: #FFFFFF;
+}
+
+.formLoginButtonEditUser:hover {
+    background: #002a87 !important;
+    border-color: #002a87 !important;
+}
+
+.formControl {
+    margin-bottom: 22px;
+}
+
+input.redFocusBorder {
+    outline: 2px solid #d1293d79;
+    box-shadow: 0px 0px 0px 4px #D1293D66;
+    box-shadow: 0px 0px 0px 1px #868FA052;
+    box-shadow: 0px 1px 2px 0px #0000000F;
+    border-radius: 6px;
+}
+
+.menuFocusBorder {
+    outline: 2px solid #d1293d79;
+    box-shadow: 0px 0px 0px 4px #D1293D66, 0px 0px 0px 1px #868FA052, 0px 1px 2px 0px #0000000F;
+    border-radius: 6px;
+}
+
+.ckEditorWrapper {
+    border: 1px solid #d1293d79;
+    /* Thin red border */
+    box-shadow: 0px 0px 0px 1px #D1293D66, 0px 0px 0px 1px #868FA052, 0px 1px 2px 0px #0000000F;
+    border-radius: 6px;
+}
+
+
+/* .formLoginBtnname{
+  color: #FFFFFF;
+ } */
+
+
+/* forget Password */
+
+.forgetpassword {
+    color: #133FA0;
+}
+
+.forgetpasswordotpmsg {
+    color: #15A75B;
+}
+
+.forgetpasswordmsg {
+    color: #868FA0;
+}
+
+.forpasswordalert {
+    color: #464F60;
+}
+
+
+/* Admin User Page */
+
+.searchInput {
+    background: #FFFFFF;
+    /* box-shadow: 0px 0px 0px 1px #868FA029; */
+    border: #c2c6ce solid 1px;
+}
+
+.searchInput:focus-visible {
+    outline: #b9b8ee solid 2px;
+}
+
+.userlistheading {
+    color: #133FA0;
+}
+
+.userListcount {
+    background: #EDEDFC;
+    color: #133FA0;
+}
+
+.tableth {
+    color: #687182;
+    background: #F7F9FC;
+    width: auto;
+}
+
+.tablethdetails {
+    color: #687182;
+    background: #F7F9FC;
+    width: 200px;
+}
+
+.tabletdname {
+    color: #5E5ADB;
+}
+
+.tabletd {
+    color: #171C26;
+}
+
+.userListMain {
+    border: 0px 2px solid #133FA0
+}
+
+.detailsMainList {
+    border: 1px solid #E9EDF5;
+    border-radius: 0px, 0px, 0px, 5px;
+}
+
+.userdetailsname {
+    color: #464F60;
+}
+
+.userDetailsBack {
+    color: #687182;
+}
+
+.text-hover-blue:hover {
+    color: #133FA0;
+}
+
+
+/* Admin OurProducts */
+
+.DescriptionWidth {
+    width: 700px
+}
+
+.DescriptionWidthAdd {
+    width: 670px
+}
+
+.dialogtitle {
+    color: #171C26;
+}
+
+.dialogtextcolor {
+    color: #464F60;
+    margin-bottom: 10px;
+}
+
+.dialogmain {
+    background: #F7F9FC;
+}
+
+.dialogmainNew {
+    width: 50%;
+}
+
+.dialogInput {
+    box-shadow: 0px 0px 0px 1px #868FA066;
+    /* box-shadow: 0px 1px 2px 0px #0000000F; */
+}
+
+.dropdown {
+    color: #687182;
+}
+
+.dialogInputfull {
+    box-shadow: 0px 0px 0px 1px #868FA066;
+}
+
+.viewOurProducts {
+    box-shadow: 0px 0px 0px 1px #868FA066;
+    /* box-shadow: 0px 1px 2px 0px #0000000F; */
+}
+
+.viewOurProductTitle {
+    color: #333B4A;
+}
+
+
+/* Add Content table */
+
+.contentlable {
+    color: #5E5ADB;
+}
+
+.viewAddContent {
+    box-shadow: 0px 1px 2px 0px #0000000F;
+}
+
+.toast-message {
+    background: darkblue;
+    color: #fff;
+    font-size: 20px;
+    width: 34vw;
+    padding: 30px 20px;
+}
+
+
+/* logout */
+
+.logoutyes {
+    color: #0E8748;
+    box-shadow: 0px 0px 0px 1px #0E8748;
+    /* box-shadow: 0px 1px 1px 0px #0000001A; */
+}
+
+.logoutNo {
+    color: #FFFFFF;
+    background: #D1293D;
+    box-shadow: 0px 1px 1px 0px #0000001A;
+}
+
+.loaderButton {
+    color: #133FA0;
+}
+
+
+/* YourComponent.css */
+
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 180%;
+    border: 1px solid #171C26;
+    /* Corrected border property */
+    transform: translateX(-50%);
+    /* padding: 5px; */
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    transition: opacity 0.2s, visibility 0.2s;
+}
+
+.tooltipLogout {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 60%;
+    border: 1px solid #171C26;
+    /* Corrected border property */
+    transform: translateX(-50%);
+    /* padding: 5px; */
+    background-color: white;
+    color: black;
+    border-radius: 4px;
+    font-size: 12px;
+    white-space: nowrap;
+    transition: opacity 0.2s, visibility 0.2s;
+}
+
+.tooltip-container:hover .tooltipLogout {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip-container:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/* Add this to your CSS file or use styled-components */
+
+.carousel-container {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.carousel-slide {
+    width: 100%;
+    height: auto;
+}
+
+.Carouselbgcolor {
+    background-color: #ffffff72;
+
+}
+
+
+/* Customize the arrow styles */
+
+.carousel-arrow {
+    border: none !important;
+    /* Remove border on hover and selection */
+    outline: none !important;
+    /* Remove outline on selection (focus) */
+}
+
+
+/* Customize the arrow icon color on hover */
+
+.carousel-arrow:hover {
+    color: #FFFFFF;
+}
+
+.searchIcon {
+    background: #133FA0 !important;
+    color: #FFFFFF;
+}
+
+.searchIcon:focus {
+    outline: none !important;
+}
+
+
+/* Remove this container when use*/
+
+.component-title {
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    top: 30px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #888;
+    text-align: center;
+}
+
+.tab-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 2px;
+    background-color: #dadadb;
+    border-radius: 9px;
+}
+
+.indicator {
+    content: "";
+    width: 130px;
+    height: 28px;
+    background: #ffffff;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    z-index: 9;
+    border: 0.5px solid rgba(0, 0, 0, 0.04);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 7px;
+    transition: all 0.2s ease-out;
+}
+
+.tab {
+    width: 130px;
+    height: 28px;
+    position: absolute;
+    z-index: 99;
+    outline: none;
+    opacity: 0;
+}
+
+.tab_label {
+    width: 130px;
+    height: 28px;
+    position: relative;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    font-size: 0.75rem;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.tab--1:checked~.indicator {
+    left: 2px;
+}
+
+.tab--2:checked~.indicator {
+    left: calc(130px + 2px);
+}
+
+.tab--3:checked~.indicator {
+    left: calc(130px * 2 + 2px);
+}
+
+
+/* ******CKeditor******** */
+
+.ck-heading_heading1 {
+    font-size: 1.5rem !important;
+    /* Set font size for Heading 1 */
+}
+
+.ck-heading_heading2 {
+    font-size: 1.25rem !important;
+    /* Set font size for Heading 2 */
+}
+
+.ck-heading_heading3 {
+    font-size: 1rem !important;
+    /* Set font size for Heading 3 */
+}
+
+.searchBox .fa {
+    color: #868FA0;
+    font-size: 14px;
+}
+
+.modalForm label {
+    font-weight: 500;
+    color: #464F60;
+}
+
+.selectArrow {
+    right: 6px;
+}
+
+.tableDetail {
+    font-size: 14px;
+}
+
+.tableDetail h2 {
+    font-size: 14px !important;
+}
+
+.tableDetail p {
+    font-size: 14px !important;
+}
+
+.bottomPosition {
+    bottom: -19px;
+}
+
+.dialogInput {
+    border: none;
+}
+
+.dialogInput:focus {
+    outline: #dbdbdb solid 1px;
+    box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, .06);
+}
+
+.dialogInput:hover {
+    outline: #dbdbdb solid 1px;
+    box-shadow: -1px 3px 10px 0 rgba(0, 0, 0, .06);
+    border: none;
+}
+
+.ck.ck-editor__editable.ck-focused:not(.ck-editor__nested-editable) {
+    border: #dbdbdb solid 1px !important;
+}
